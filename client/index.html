@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Combo Plan Generator</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    button, select { padding: 10px; font-size: 16px; margin-right: 10px; }
+    pre { background: #f4f4f4; padding: 10px; overflow-x: auto; }
+    .combo-day { margin-bottom: 20px; }
+    .combo-meal { margin-left: 20px; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>7-Day Combo Plan Generator</h1>
+  <label for="startDay">Select Start Day: </label>
+  <select id="startDay">
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday" selected>Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+    <option value="Saturday">Saturday</option>
+    <option value="Sunday">Sunday</option>
+  </select>
+  <button id="generateBtn">Generate Combo Plan</button>
+  <div id="output"></div>
+  <script src="script.js"></script>
+</body>
+</html>
